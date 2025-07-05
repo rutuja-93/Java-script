@@ -52,10 +52,35 @@ console.log(add(10 ,30));
 
 
 
+// 1 function declaration
+
+
+function addition1(n1, n2)
+{
+    let sum=n1+n2;
+    console.log("sum is", +sum);
+
+}
+addition1(12, 10);
+
+
+// 2 function expresion
 
 const add= function(a,b){
   
-    
-    return a+b;
+    let sum=a+b;
+    console.log("sum is " +sum);
+    return sum;
 }
-console.log(add(50 ,30));
+add(50 ,30);
+
+
+// 3 arrow function
+
+
+const addition= (no1, no2)=>{
+    let sum=no1+no2;
+    console.log("sum is" +sum);
+    return sum;
+}
+addition(10, 30);
