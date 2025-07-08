@@ -84,3 +84,79 @@ const addition= (no1, no2)=>{
     return sum;
 }
 addition(10, 30);
+
+
+
+
+// 1 even number
+
+
+const evenOdd= (num) =>{
+    if(num%2==0){
+        console.log("number is even " +num);
+    }
+    else{
+        console.log("number is odd " +num)
+    }
+}
+evenOdd(6);
+
+// 2 square of number
+
+
+const square= (x) =>{
+    let ans= x * x;
+    console.log("square is " +ans);
+}
+square(9);
+
+
+
+// 3 multiplication table
+
+
+const multiTable = (num) =>{
+    for(let i=1; i<=10; i++){
+            console.log( num*i);
+    }
+    
+}
+multiTable(12);
+
+
+
+// 4 maximum of two numbers
+
+
+const MaxNum= (n1, n2) =>{
+    if(n1>n2){
+        console.log("n1 is maximum " +n1);
+
+    }
+    else{
+        console.log("n2 is maximum " +n2);
+    }
+}
+MaxNum(123, 198);
+
+
+// 5 Prime Number
+
+const PrimeNum = (num) => {
+    if (num <= 1) {
+        console.log(num + " is not prime");
+        return;
+    }
+
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            console.log(num + " is not prime");
+            return;
+        }
+    }
+
+    console.log(num + " is prime");
+};
+
+PrimeNum(16);  
+PrimeNum(7);  
